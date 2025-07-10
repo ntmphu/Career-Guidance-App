@@ -10,7 +10,7 @@ const genAI = new GoogleGenerativeAI(API_KEY);
 
 export const getJobMarketResponse = async (message: string): Promise<string> => {
   try {
-    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+    const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash' });
     
     const prompt = `You are a career guidance expert specializing in job market trends and analysis. 
     
@@ -39,7 +39,7 @@ export const getJobMarketResponse = async (message: string): Promise<string> => 
 
 export const getCareerPreparationResponse = async (message: string): Promise<string> => {
   try {
-    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+    const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash' });
     
     const prompt = `You are a personalized career preparation coach and mentor.
     
@@ -68,7 +68,7 @@ export const getCareerPreparationResponse = async (message: string): Promise<str
 
 export const getCareerQuizAnalysis = async (responses: any[], userProfile: any): Promise<string> => {
   try {
-    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+    const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash' });
     
     const prompt = `You are an expert career counselor analyzing a comprehensive career assessment.
     
